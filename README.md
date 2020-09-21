@@ -10,5 +10,12 @@ Az első és legegyszerűbb rácsos gázautomata model a HPP Model. A model a r�
 |:--:| :--: | :--: |
 | *Ellenkező irányú részecskék ütközése* | *90°-os ütközés* | *Fallal való ütközés* |
 
+### FHP Model(Frisch, Hasslacher, and Pomeau)
+ipsum lorem
+
+| <img src="iamges/fhp.gif" width="300" height="300"> |
+| :-- : |
+| Ütközés az FHP Modelben | 
+
 # References
 [1]. https://en.wikipedia.org/wiki/Lattice_gas_automaton
