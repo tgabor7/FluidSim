@@ -8,9 +8,9 @@ Az első és legegyszerűbb rácsos gázautomata model a HPP Model. A model a r�
 
 <div>
 <figure>
-<img src="fluid.gif" width="300" height="300"/>
+<img src="fluid.gif" width="300" height="300">
 <figcaption>Részecskék ütközéskor 90°-kal elfordulnak.</figcaption>
-</figure> <img src="nothing.gif" width="300" height="300"/>
+</figure> <img src="nothing.gif" width="300" height="300">
 </div>
 # References
 [1]. https://en.wikipedia.org/wiki/Lattice_gas_automaton
