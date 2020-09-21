@@ -13,7 +13,7 @@ Az első és legegyszerűbb rácsos gázautomata model a HPP Model. A model a r�
 ### FHP Model(Frisch, Hasslacher, and Pomeau)
 ipsum lorem
 
-| <img src="iamges/fhp.gif" width="300" height="300"> |
+| <img src="images/fhp.gif" width="300" height="300"> |
 | :--: |
 | Ütközés az FHP Modelben | 
 
