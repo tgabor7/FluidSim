@@ -13,7 +13,7 @@ Az első és legegyszerűbb rácsos gázautomata model a HPP Model. A model a r�
 ### FHP Model(Frisch, Hasslacher, and Pomeau)
 Az FHP és HPP Model között a legnagyobb különbség a részecskék áramlási irányainak száma, ami az FHP esetében 6.
 
-| <img src="images/fhp.gif" width="300" height="300"> | <img src="images/fhpcollision.gif" width="300" height="300" |
+| <img src="images/fhp.gif" width="300" height="300"> | <img src="images/fhpcollision.gif" width="300" height="300">|
 | :--: | :--: |
 | Három részecske ütközés az FHP Modelben | Két részecske ütközése az FHP Modelben | 
 
