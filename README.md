@@ -16,6 +16,13 @@ f[x][y][i] = b (1 vagy 0)
 
 ahol f egy három dimenziós boolean tömb, x a rács x, y a rács y koordinátája. Az i index a fentebb definiált sebességek indexe. Más szóval a fenti képlet megadja hogy az (x,y) helyen van-e e<sub>i</sub> irányú részecske.
 
+Ezután az ütközési szakasz a következő képpen írhatő le.:
+
+f<sup>'</sup>[x][y][i] = f[x][y][i] + c(x,y,i)
+
+, ahol a c értéke:
+c(x,y,i) = f[x][y][(i+1)%4](1-f[x][y][i])(1-f[x][y][(i+2)%4])-(1-f[x][y][(i+1)%4])(1-f[x][y][(i+3)%4])(f[x][y][i])(f[x][y][(i+2)%4])
+
 | <img src="images/fluid.gif" width="300" height="300"> | <img src="images/nothing.gif" width="300" height="300"> | <img src="images/bounce.gif" width="300" height="300"> |
 |:--:| :--: | :--: |
 | *Ellenkező irányú részecskék ütközése* | *90°-os ütközés* | *Fallal való ütközés* |
