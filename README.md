@@ -20,9 +20,10 @@ Ezután az ütközési szakasz a következő képpen írhatő le.:
 
 f<sup>'</sup>[x][y][i] = f[x][y][i] + c(x,y,i)
 
-, ahol a c értéke:
+, ahol a c értéke:<br>
+<p>
 c(x,y,i) = f[x][y][(i+1)%4](1-f[x][y][i])(1-f[x][y][(i+2)%4])-(1-f[x][y][(i+1)%4])(1-f[x][y][(i+3)%4])(f[x][y][i])(f[x][y][(i+2)%4])
-
+</p>
 | <img src="images/fluid.gif" width="300" height="300"> | <img src="images/nothing.gif" width="300" height="300"> | <img src="images/bounce.gif" width="300" height="300"> |
 |:--:| :--: | :--: |
 | *Ellenkező irányú részecskék ütközése* | *90°-os ütközés* | *Fallal való ütközés* |
