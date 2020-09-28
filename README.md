@@ -18,11 +18,11 @@ ahol f egy három dimenziós boolean tömb, x a rács x, y a rács y koordinát�
 
 Ezután az ütközési szakasz a következő képpen írhatő le.:
 
-f<sup>'</sup>[x][y][i] = f[x][y][i] + c(x,y,i)
+f<sup>'</sup>[x][y][i] = f[x][y][i] + c
 
 , ahol a c értéke:<br>
 
-<p>c(x,y,i) = f[x][y][(i+1)%4](1-f[x][y][i])(1-f[x][y][(i+2)%4])-(1-f[x][y][(i+1)%4])(1-f[x][y][(i+3)%4])(f[x][y][i])(f[x][y][(i+2)%4]) </p>
+<p>c = f[x][y][(i+1)%4]*(1-f[x][y][i])*(1-f[x][y][(i+2)%4])-(1-f[x][y][(i+1)%4])*(1-f[x][y][(i+3)%4])*(f[x][y][i])*(f[x][y][(i+2)%4]) </p>
 
 | <img src="images/fluid.gif" width="300" height="300"> | <img src="images/nothing.gif" width="300" height="300"> | <img src="images/bounce.gif" width="300" height="300"> |
 |:--:| :--: | :--: |
@@ -35,5 +35,10 @@ Az FHP és HPP Model között a legnagyobb különbség a részecskék áramlás
 | :--: | :--: |
 | Három részecske ütközés az FHP Modelben | Két részecske ütközése az FHP Modelben | 
 
+### LBGK Model
+### Reynolds szám
+$$\[ x = \dfrac{\dfrac{a}{b}}{c}\]$$
+
 # References
 [1]. https://en.wikipedia.org/wiki/Lattice_gas_automaton
+[2]. Lattice Boltzmann Method and Its Applications in Engineering(Zhaoli Guo, Chang Shu)
