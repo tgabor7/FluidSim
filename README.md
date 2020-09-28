@@ -1,4 +1,5 @@
 
+
 # FluidSim
 
 ## Rácsos gázautomata (Lattice Gas Automata)
@@ -38,7 +39,7 @@ Az FHP és HPP Model között a legnagyobb különbség a részecskék áramlás
 
 ### LBGK Model
 ### Reynolds szám
-<img src="https://render.githubusercontent.com/render/math?math=Re=\frac{\rho uL}{\mu}">
+<img src="https://render.githubusercontent.com/render/math?math=\Large Re=\frac{\rho uL}{\mu}">
 
 # References
 [1]. https://en.wikipedia.org/wiki/Lattice_gas_automaton
