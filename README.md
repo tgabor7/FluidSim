@@ -38,7 +38,7 @@ Az FHP és HPP Model között a legnagyobb különbség a részecskék áramlás
 
 ### LBGK Model
 ### Reynolds szám
-<img src="https://latex.codecogs.com/svg.latex?&space;Re=\frac{\rho u}{qwe}" title="\Large Re=\frac{\rho uL}{\mu}" />
+<img src="https://latex.codecogs.com/svg.latex?&space;Re=\frac{\rho*u}{qwe}" title="\Large Re=\frac{\rho*uL}{\mu}" />
 
 # References
 [1]. https://en.wikipedia.org/wiki/Lattice_gas_automaton
