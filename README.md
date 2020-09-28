@@ -38,7 +38,7 @@ Az FHP és HPP Model között a legnagyobb különbség a részecskék áramlás
 
 ### LBGK Model
 ### Reynolds szám
-<img src="https://render.githubusercontent.com/render/math?math=Re=\frac{\rho uL}{\mu}">
+<img src="https://render.githubusercontent.com/render/math?math=\Large Re=\frac{\rho uL}{\mu}">
 
 - ρ a folyadék sűrűsége
 - u az áramlási sebesség
