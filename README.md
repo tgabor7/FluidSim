@@ -1,5 +1,4 @@
 
-
 # FluidSim
 
 ## Rácsos gázautomata (Lattice Gas Automata)
@@ -79,8 +78,7 @@ ahol,
 Ω = -(f[x][y][i] - feq[ρ[x][y]][u[x][y]][i]) / τ
 és
 feq[ρ][u][i] = ρ * (A+B*(e[i]*u)+C*u^2+D*(e[i]*u)^2)
-<img src="https://render.githubusercontent.com/render/math?math=\Large feq[\rho][u][i]=\rho * (A + B*
-(e[i]*u)+C*u^2 + D*(e[i]*u)^2)">
+<img src="https://render.githubusercontent.com/render/math?math=\Large feq[\rho][u][i]=\rho * (A + B*(e[i]*u)+C*u^2 + D*(e[i]*u)^2)">
 
 
 - τ relaxációs idő
