@@ -221,11 +221,11 @@ void streamKernel(double* f, double* f_post, bool* solid, int width, int height,
 	}
 }
 ```
-<img src="images/LBMRe1000.gif" width="400" height="100"><br>
+<img src="images/LBMRe1000.gif" width="800" height="200"><br>
 Re = 1000 <br><br>
-<img src="images/LBMRe5000.gif" width="400" height="100"><br>
+<img src="images/LBMRe5000.gif" width="800" height="200"><br>
 Re = 5000 <br><br>
-<img src="images/LBMRe20000.gif" width="400" height="100"><br>
+<img src="images/LBMRe20000.gif" width="800" height="200"><br>
 Re = 20000 <br><br>
 
 ### Reynolds szám
