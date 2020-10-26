@@ -5,7 +5,7 @@
 A rácsos gázautomaták olyan sejtautomaták amiket folyadék áramlás szimulására használnak, a rács-Boltzman módszer elődje.
 
 ### HPP Model(Hardy, Pomeau and de Pazzis)
-Az első és legegyszerűbb rácsos gázautomata model a HPP Model. A model a részecske mozgási irányait tartalmazza a rácsokban. Az algoritmus 2 lépésből áll, az áramlás és az ütközésből. Az áramlási szakasz során a részecskék a mozgási irányuk szerint a következő cellába jut. Ütközés akkor következik be ha ugyanabba a cellába ellentétes irányú részecskék érkeznek, ekkor az irányuk 90°-kal elfordul. A model diszkrét áramlási sebességei a következők:
+Az első és legegyszerűbb rácsos gázautomata model a HPP Model. A model a részecske mozgási irányait tartalmazza a rácsokban. Az algoritmus 2 lépésből áll, az áramlás és az ütközésből. Az áramlási szakasz során a részecskék a mozgási irányuk szerint a következő cellába jut. Ütközés akkor következik be ha ugyanabba a cellába ellentétes irányú részecskék érkeznek, ekkor az irányuk 90°-kal elfordul. A model áramlási sebességei a következők:
 e<sub>0</sub>=(1,0)
 e<sub>1</sub>=(0,1)
 e<sub>2</sub>=(-1,0)
@@ -16,7 +16,7 @@ Egy 500x500-as rácsot 4 áramlási sebességgel a következőképpen tudjuk áb
 <img src="https://render.githubusercontent.com/render/math?math=\Large f[x][y][i] = b">
 b boolean
 
-ahol f egy három dimenziós boolean tömb, x a rács x(0-499), y a rács y(4-499) koordinátája. Az i(0-3) index a fentebb definiált sebességek indexe. Más szóval a fenti képlet megadja hogy az (x,y) helyen van-e e<sub>i</sub> irányú részecske.
+ahol f egy három dimenziós boolean tömb, x a rács x(0-499), y a rács y(0-499) koordinátája. Az i(0-3) index a fentebb definiált sebességek indexe. Más szóval a fenti képlet megadja hogy az (x,y) helyen van-e e<sub>i</sub> irányú részecske.
 
 Ezután az ütközési szakasz a következő képpen írhatő le.:
 
@@ -58,14 +58,20 @@ collide()
 |:--:| :--: | :--: |
 | *Ellenkező irányú részecskék ütközése* | *90°-os ütközés* | *Fallal való ütközés* |
 
+<img src="images/hppgif.gif" width="400" height="400">
+
 ### FHP Model(Frisch, Hasslacher, and Pomeau)
 Az FHP és HPP Model között a legnagyobb különbség a részecskék áramlási irányainak száma, ami az FHP esetében 6.
 
 | <img src="images/fhp.gif" width="300" height="300"> | <img src="images/fhpcollision.gif" width="300" height="300">|
 | :--: | :--: |
-| Három részecske ütközés az FHP Modelben | Két részecske ütközése az FHP Modelben | 
+| Három részecske ütközés az FHP Modelben | Két részecske ütközése az FHP Modelben | <br>
+
+<img src="images/fhpgif.gif" width="400" height="400">
+
 ### LBM (Rács Boltzmann Módszer)
 A rács Bolltzman módszernél a rács pontok eloszlási függvényeket tartalmaznak.
+
 ### LBGK Model
 Az LBGK modelleket dimenzió(n) és sebesség(b) szám által csoporotsítják (DnQb).A következőkben a D2Q9 modellel foglalkozunk. Az áramlás nem változik az LGA-hoz képest, azonban az ütközési szakasz kicsit összetettebb.
 
@@ -75,7 +81,7 @@ Az eloszlási függvény a következő tömbbel ábrázolható.:<br>
 (R valós szám x és y a tengelyek szerinti rács pont i a sebességek száma)
 
 Az algoritmushoz tudnunk kell az egyes rácspontok sűrűségét és a részecskék sebességét, amiket a következő tömbbökben tárolunk.:<br>
-<img src="https://render.githubusercontent.com/render/math?math=\Large u[x][y] = R^2">
+<img src="https://render.githubusercontent.com/render/math?math=\Large u[x][y] = RxR"><br>
 <img src="https://render.githubusercontent.com/render/math?math=\Large \rho[x][y] = R">
 
 Az ütközési szakasz a következő képpen alakul.:<br>
@@ -221,6 +227,7 @@ void streamKernel(double* f, double* f_post, bool* solid, int width, int height,
 	}
 }
 ```
+### LBM áramlás szimuláció
 <img src="images/LBMRe1000.gif" width="800" height="200"><br>
 Re = 1000 <br><br>
 <img src="images/LBMRe5000.gif" width="800" height="200"><br>
@@ -229,6 +236,8 @@ Re = 5000 <br><br>
 Re = 20000 <br><br>
 
 ### Reynolds szám
+A Reynolds-szám egyike az áramlástan és a hőátadás számításaiban használt hasonlósági dimenziómentes számoknak. Ha egy áramlástani elven működő gép (repülőgép, hajó, szivattyú, vízturbina, csővezeték) kimért, ismert jellemzőiből egy tőle eltérő méretű, hasonló gép jellemzőire akar valaki következtetni, akkor a hasonlósági törvényeket kell követni. Ilyen eset fordulhat elő például repülőgép tervezésénél, ahol a tervezés előrehaladtával elkészítik a gép léptékhelyes modelljét, majd annak légellenállását, a szárny felhajtóerejét és egyéb aerodinamikai jellemzőit szélcsatornában kimérik és a kapott adatokat átszámítják a végleges méretű repülőgépre. De hasonló a feladat akkor is, ha egy repülőgép-modellező elkészíti egy nagy repülőgép kicsinyített mását és annak ismert adataiból kívánja meghatározni a modell tulajdonságait.[5]<br>
+
 <img src="https://render.githubusercontent.com/render/math?math=\Large Re=\frac{\rho uL}{\mu}">
 
 - ρ a folyadék sűrűsége
@@ -241,3 +250,4 @@ Re = 20000 <br><br>
 [2]. Lattice Boltzmann Method and Its Applications in Engineering(Zhaoli Guo, Chang Shu)<br>
 [3]. https://developer.nvidia.com <br>
 [4]. https://www.qt.io
+[5]. https://hu.wikipedia.org/wiki/Reynolds-szám
