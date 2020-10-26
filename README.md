@@ -80,9 +80,9 @@ Az algoritmushoz tudnunk kell az egyes rácspontok sűrűségét és a részecsk
 
 Az ütközési szakasz a következő képpen alakul.:<br>
 <img src="https://render.githubusercontent.com/render/math?math=\Large f'[x][y][i] = f[x][y][i] %2B \Omega"><br>
-ahol,
+ahol,<br>
 <img src="https://render.githubusercontent.com/render/math?math=\Large \Omega = -(f[x][y][i] - feq[\rho[x][y]][u[x][y]][i]) / \tau"><br>
-és
+és<br>
 <img src="https://render.githubusercontent.com/render/math?math=\Large{feq[\rho][u][i]=\rho(A %2B B(e[i]u) %2B Cu^2 %2B D(e[i]u)^2)}"><br>
 - A,B,C,D konstansok, amiket a rács geometriája határoz meg. Esetünkben (D2Q9 model) A = 1, B = 4, C = 4.5 és D = -1.5
 - τ relaxációs idő
@@ -221,6 +221,12 @@ void streamKernel(double* f, double* f_post, bool* solid, int width, int height,
 	}
 }
 ```
+<img src="images/LBMRe1000.gif" width="400" height="100"><br>
+Re = 1000 <br><br>
+<img src="images/LBMRe5000.gif" width="400" height="100"><br>
+Re = 5000 <br><br>
+<img src="images/LBMRe20000.gif" width="400" height="100"><br>
+Re = 20000 <br><br>
 
 ### Reynolds szám
 <img src="https://render.githubusercontent.com/render/math?math=\Large Re=\frac{\rho uL}{\mu}">
