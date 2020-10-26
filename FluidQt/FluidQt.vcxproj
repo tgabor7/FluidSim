@@ -97,6 +97,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CudaCompile Include="LBGK.cpp" />
+    <ClCompile Include="GradientWidget.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="Maths.cpp" />
     <ClCompile Include="OpenglWidget.cpp" />
@@ -116,11 +117,16 @@
     <QtMoc Include="OpenglWidget.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="GradientWidget.h" />
     <ClInclude Include="LBGK.h" />
     <ClInclude Include="Maths.h" />
     <ClInclude Include="RenderSystem.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\cursor.png" />
+    <Image Include="pencil.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -16,7 +16,7 @@
   <widget class="QDoubleSpinBox" name="doubleSpinBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>60</x>
      <y>250</y>
      <width>61</width>
      <height>22</height>
@@ -29,10 +29,10 @@
     <double>1.000000000000000</double>
    </property>
    <property name="maximum">
-    <double>1000.000000000000000</double>
+    <double>100000.000000000000000</double>
    </property>
    <property name="value">
-    <double>20.000000000000000</double>
+    <double>800.000000000000000</double>
    </property>
   </widget>
   <widget class="OpenglWidget" name="openGLWidget">
@@ -84,14 +84,232 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>250</y>
+     <x>20</x>
+     <y>260</y>
      <width>47</width>
      <height>13</height>
     </rect>
    </property>
    <property name="text">
     <string>Re</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ux0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>uy0</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>290</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="value">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>330</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>250</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>200.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>2.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>70</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>90</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="GradientWidget" name="openGLWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>160</y>
+     <width>21</width>
+     <height>200</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>160</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>350</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
    </property>
   </widget>
  </widget>
@@ -101,6 +319,11 @@
    <class>OpenglWidget</class>
    <extends>QOpenGLWidget</extends>
    <header>OpenglWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GradientWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>GradientWidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

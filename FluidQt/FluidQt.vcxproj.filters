@@ -53,12 +53,18 @@
     <ClCompile Include="Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GradientWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainForm.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="OpenglWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="GradientWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -91,5 +97,13 @@
     <CudaCompile Include="LBGK.cpp">
       <Filter>Source Files</Filter>
     </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="pencil.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\cursor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

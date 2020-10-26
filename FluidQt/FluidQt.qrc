@@ -1,4 +1,9 @@
 <RCC>
-    <qresource prefix="FluidQt">
+    <qresource prefix="/FluidQt">
+        <file>pencil.jpg</file>
+        <file>cursor.png</file>
+        <file>circle.png</file>
+        <file>pencil.png</file>
+        <file>eraser.png</file>
     </qresource>
 </RCC>
