@@ -16,7 +16,7 @@ Egy 500x500-as rácsot 4 áramlási sebességgel a következőképpen tudjuk áb
 <img src="https://render.githubusercontent.com/render/math?math=\Large f[x][y][i] = b">
 b boolean
 
-ahol f egy három dimenziós boolean tömb, x a rács x(0-499), y a rács y(0-499) koordinátája. Az i(0-3) index a fentebb definiált sebességek indexe. Más szóval a fenti képlet megadja hogy az (x,y) helyen van-e e<sub>i</sub> irányú részecske.
+ahol <b>f<b> egy három dimenziós boolean tömb, <b>x<b> a rács x(0-499), <b>y<b> a rács y(0-499) koordinátája. Az <b>i<b> (0-3) index a fentebb definiált sebességek indexe. Más szóval a fenti képlet megadja hogy az (x,y) helyen van-e e<sub>i</sub> irányú részecske.
 
 Ezután az ütközési szakasz a következő képpen írhatő le.:
 
@@ -245,9 +245,28 @@ A Reynolds-szám egyike az áramlástan és a hőátadás számításaiban haszn
 - L a jellemző hosszméret
 - μ a dinamikai viszkozitás
 
+### QT szoftver
+A Qt keresztplatformos alkalmazás-keretrendszer, amit GUI-s alkalmazások fejlesztésére használnak. Ezt használjuk a programunk megjelenítési felületéhez.
+Az elkészült alkalmazásban megadhatunk tetszőleges akadályt egy folyadék csatornában. Megadhatjuk a Reynolds számot és a folyadék sebességét is. A szoftver elvégzi a szimulációt és a folyadékáram sebesség abszolút értékét ábrázolja.
+
+<img src="images/qt.png"><br>
+- 1. A kurzor eszközzel mozgathajuk a kamerát.
+- 2. A ceruza eszközzel akadályokat rajzolhatunk.
+- 3. Kör akadályt hozhazunk létre.
+- 4. Radír eszközzel törölhatünk akadályokat.
+- 5. Az eszköz vastagsága.
+- 6. A sebességek nagyságának spektruma.
+- 7. A Reynolds számot és a folyadék kezdeti sebességét itt adhatjuk meg.
+- 8. Szimuláció indítása, szüneteltetése és kezdeti helyzetbe helyezését ezek a gombok  kezelik.
+- 9. A program a kurzor helyén kiírja a folyadék sebességét és az f függvény értékét.
+- 10. A szimulációt itt jeleníti meg a program.
+<br>
+A  szoftver működés közben:<br>
+<img src="images/qt1.png"><br>
+
 # References
 [1]. https://en.wikipedia.org/wiki/Lattice_gas_automaton <br>
 [2]. Lattice Boltzmann Method and Its Applications in Engineering(Zhaoli Guo, Chang Shu)<br>
 [3]. https://developer.nvidia.com <br>
-[4]. https://www.qt.io
+[4]. https://www.qt.io <br>
 [5]. https://hu.wikipedia.org/wiki/Reynolds-szám
