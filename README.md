@@ -250,19 +250,19 @@ A Qt keresztplatformos alkalmazás-keretrendszer, amit GUI-s alkalmazások fejle
 Az elkészült alkalmazásban megadhatunk tetszőleges akadályt egy folyadék csatornában. Megadhatjuk a Reynolds számot és a folyadék sebességét is. A szoftver elvégzi a szimulációt és a folyadékáram sebesség abszolút értékét ábrázolja.
 
 <img src="images/qt.png"><br>
-- 1. A kurzor eszközzel mozgathajuk a kamerát.
-- 2. A ceruza eszközzel akadályokat rajzolhatunk.
-- 3. Kör akadályt hozhazunk létre.
-- 4. Radír eszközzel törölhatünk akadályokat.
-- 5. Az eszköz vastagsága.
-- 6. A sebességek nagyságának spektruma.
-- 7. A Reynolds számot és a folyadék kezdeti sebességét itt adhatjuk meg.
-- 8. Szimuláció indítása, szüneteltetése és kezdeti helyzetbe helyezését ezek a gombok  kezelik.
-- 9. A program a kurzor helyén kiírja a folyadék sebességét és az f függvény értékét.
-- 10. A szimulációt itt jeleníti meg a program.
+- 1 A kurzor eszközzel mozgathajuk a kamerát.
+- 2 A ceruza eszközzel akadályokat rajzolhatunk.
+- 3 Kör akadályt hozhazunk létre.
+- 4 Radír eszközzel törölhatünk akadályokat.
+- 5 Az eszköz vastagsága.
+- 6 A sebességek nagyságának spektruma.
+- 7 A Reynolds számot és a folyadék kezdeti sebességét itt adhatjuk meg.
+- 8 Szimuláció indítása, szüneteltetése és kezdeti helyzetbe helyezését ezek a gombok  kezelik.
+- 9 A program a kurzor helyén kiírja a folyadék sebességét és az f függvény értékét.
+- 10 A szimulációt itt jeleníti meg a program.
 <br>
 A  szoftver működés közben:<br>
-<img src="images/qt1.png"><br>
+<img src="images/qt1.PNG"><br>
 
 # References
 [1]. https://en.wikipedia.org/wiki/Lattice_gas_automaton <br>
