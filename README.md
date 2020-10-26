@@ -16,7 +16,7 @@ Egy 500x500-as rácsot 4 áramlási sebességgel a következőképpen tudjuk áb
 <img src="https://render.githubusercontent.com/render/math?math=\Large f[x][y][i] = b">
 b boolean
 
-ahol <b>f<b> egy három dimenziós boolean tömb, <b>x<b> a rács x(0-499), <b>y<b> a rács y(0-499) koordinátája. Az <b>i<b> (0-3) index a fentebb definiált sebességek indexe. Más szóval a fenti képlet megadja hogy az (x,y) helyen van-e e<sub>i</sub> irányú részecske.
+ahol <b>f</b> egy három dimenziós boolean tömb, <b>x</b> a rács x(0-499), <b>y</b> a rács y(0-499) koordinátája. Az <b>i</b> (0-3) index a fentebb definiált sebességek indexe. Más szóval a fenti képlet megadja hogy az (x,y) helyen van-e e<sub>i</sub> irányú részecske.
 
 Ezután az ütközési szakasz a következő képpen írhatő le.:
 
