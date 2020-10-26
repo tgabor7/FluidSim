@@ -20,12 +20,10 @@ ahol f egy három dimenziós boolean tömb, x a rács x(0-499), y a rács y(4-49
 
 Ezután az ütközési szakasz a következő képpen írhatő le.:
 
-f<sup>'</sup>[x][y][i] = f[x][y][i] + c
-<img src="https://render.githubusercontent.com/render/math?math=\Large f'[x][y][i] = f[x][y][i] + c"><br>
+<img src="https://render.githubusercontent.com/render/math?math=\Large f'[x][y][i] = f[x][y][i] %2B c"><br>
 
 , ahol a c értéke:<br>
 
-<p>c = f[x][y][(i+1)%4]*(1-f[x][y][i])*(1-f[x][y][(i+2)4])-(1-f[x][y][(i+1)%4])*(1-f[x][y][(i+3)%4])*(f[x][y][i])*(f[x][y][(i+2)%4]) </p>
 <img src="https://render.githubusercontent.com/render/math?math=\Large f[x][y][(i %2B 1)mod4]*(1-f[x][y][i])*(1-f[x][y][(i %2B 2)mod4])-(1-f[x][y][(i %2B 1)mod4])*(1-f[x][y][(i %2B 3)mod4])*(f[x][y][i])*(f[x][y][(i %2B 2)mod4])"><br>
 
 
@@ -72,15 +70,15 @@ A rács Bolltzman módszernél a rács pontok eloszlási függvényeket tartalma
 Az LBGK modelleket dimenzió(n) és sebesség(b) szám által csoporotsítják (DnQb).A következőkben a D2Q9 modellel foglalkozunk. Az áramlás nem változik az LGA-hoz képest, azonban az ütközési szakasz kicsit összetettebb.
 
 
-Az eloszlási függvény a következő tömbbel ábrázolható.:
+Az eloszlási függvény a következő tömbbel ábrázolható.:<br>
 <img src="https://render.githubusercontent.com/render/math?math=\Large f[x][y][i] = R">
 (R valós szám x és y a tengelyek szerinti rács pont i a sebességek száma)
 
-Az algoritmushoz tudnunk kell az egyes rácspontok sűrűségét és a részecskék sebességét, amiket a következő tömbbökben tárolunk.:
+Az algoritmushoz tudnunk kell az egyes rácspontok sűrűségét és a részecskék sebességét, amiket a következő tömbbökben tárolunk.:<br>
 <img src="https://render.githubusercontent.com/render/math?math=\Large u[x][y] = R^2">
 <img src="https://render.githubusercontent.com/render/math?math=\Large \rho[x][y] = R">
 
-Az ütközési szakasz a következő képpen alakul.:
+Az ütközési szakasz a következő képpen alakul.:<br>
 <img src="https://render.githubusercontent.com/render/math?math=\Large f'[x][y][i] = f[x][y][i] %2B \Omega"><br>
 ahol,
 <img src="https://render.githubusercontent.com/render/math?math=\Large \Omega = -(f[x][y][i] - feq[\rho[x][y]][u[x][y]][i]) / \tau"><br>
@@ -91,6 +89,7 @@ ahol,
 - <img src="https://render.githubusercontent.com/render/math?math=\Large \rho[x][y] = \sum_{i=0}^{Q-1} f[x][y][i]">
 - <img src="https://render.githubusercontent.com/render/math?math=\Large \u[x][y] = \frac{\sum_{i=0}^{Q-1} f[x][y][i]e[i]}{\rho[x][y]}">
 
+c++ kód:<br>
 ```cpp
 double feq(double rho, double u, double v, int k)
 {
